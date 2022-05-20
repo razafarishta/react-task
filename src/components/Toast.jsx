@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Toast = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
-    handelToast(message) {
+    handleToast(message) {
       toast(message);
     },
   }));
