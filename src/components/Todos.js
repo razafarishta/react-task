@@ -1,5 +1,5 @@
 import React from "react";
-const Todos = (...props) => {
+const Todos = (props) => {
   console.log(props, "propsssssss");
   return (
     // <div
@@ -14,7 +14,7 @@ const Todos = (...props) => {
     <>
       {/* <h2>aosdkasd;klasdl</h2> */}
       <li>
-        <h2 style={{ width: 600, height: 800 }}>{props.title}</h2>
+        <h2>hello</h2>
       </li>
     </>
     // </div>
