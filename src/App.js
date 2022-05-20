@@ -1,13 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/Header";
+import Cards from "./components/Cards";
+import Signup from "./screens/Signup";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Route exact path="/" component={Signup} />
+      {/* <Header />
+      <Cards /> */}
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reloa.
         </p>
         <a
           className="App-link"
@@ -17,7 +25,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
