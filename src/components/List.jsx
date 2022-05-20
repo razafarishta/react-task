@@ -7,8 +7,14 @@ const TodosList = ({ data, onClick, handleRemove }) => {
       onDoubleClick={() => handleRemove(data.title)}
       onClick={() => onClick(data.userId)}
       sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+      style={{ listStyle: "none" }}
     >
-      <li value={data.title}>{data.title}</li>
+      <li
+        style={{ cursor: "pointer", alignContent: "flex-start" }}
+        value={data.title}
+      >
+        {data.title}
+      </li>
     </ul>
   );
 };
